@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav1 a{
+    text-decoration: none;
+}
+.im1{
+    width: 120px;
+}
+.im2{
+    width: 50px;
+}
+.im3{
+    width: 50px;
+}
+.nav1{
+    text-align: center;
+}
+.nav1 ul li{
+    display:inline-block ;
+}
+.nav1 ul li a{
+    color: black;
+    padding: 15px 30px;
+    display: block;
+}
+.nav1 ul li:hover a{
+    color: red;
+}
+
+.nav2{
+   background:linear-gradient(to right, rgb(148, 45, 4), rgb(42, 78, 119) ,rgb(10, 10, 66) );
+}   
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    line-height: 50px;
+}
+.parent{
+   width: 800px;
+   height: 350px;
+   background-color: antiquewhite;
+   margin:auto auto;
+   position:relative ;
+}
+.child{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background-color:rgb(70, 9, 42);
+    transition: 0.6s;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+.child2{
+    bottom: 100px;
+    left: 200px;
+    position: absolute;
+    background-color:rgb(42, 99, 165);
+    font-size: 35px;
+    font-family: cursive;
+    color: white;
+}
+.child3{
+    bottom: 50px;
+    left: 350px;
+    position: absolute;
+    background-color:rgb(165, 153, 42);
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+.child:hover{
+    width: 400px;
+    z-index: 20;
+    background-color: blueviolet;
+}
+/*Submenu*/
+.submenu{
+    position: absolute;
+    background-color:rgb(143, 218, 241);
+    opacity:0;
+    visibility:hidden;
+    transition: 0.5s;
+    margin-top:70px;
+}
+.submenu li{
+  display: block;
+}
+.submenu li:hover a{
+    background-color: rgb(37, 164, 196);
+    font-family: cursive; 
+    color:#000;
+}
+.nav1 ul li:hover ul{
+  opacity:1;
+  visibility: visible;
+  margin-top:0px;
+}
